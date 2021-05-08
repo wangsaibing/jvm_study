@@ -40,6 +40,7 @@ public class T15_FullGC_Problem01 {
     private static void modelFit(){
         List<CardInfo> taskList = getAllCardInfo();
         taskList.forEach(info -> {
+            System.out.println(info);
             // do something
             executor.scheduleWithFixedDelay(() -> {
                 //do sth with info
